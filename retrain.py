@@ -1,17 +1,15 @@
 # Let's read our input file into a variable
 
 with open('cnncode.py', 'r') as f:
-    in_file = f.readlines()  					# in_file is now a list of lines
+    in_file = f.readlines()  						# in_file is now a list of lines
 
 # Now we start building our output
 
 out_file = []
 for line in in_file:
-    out_file.append(line)  					# copy each line, one by one
+    out_file.append(line)  						# copy each line, one by one
     if 'model.add(MaxPooling2D(pool_size = (2, 2)))\n' in line:  	# add a new entry, after a match
-        out_file.append('model.add(Conv2D(50, (5, 5) ))
-			 model.add(Activation("relu"))
-                         model.add(MaxPooling2D(pool_size = (2, 2),strides = (2, 2)))')
+        out_file.append('model.add(Conv2D(50, (5, 5) )) \n model.add(Activation("relu")) \n model.add(MaxPooling2D(pool_size = (2, 2),strides = (2, 2)))')
 
 
 
