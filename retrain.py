@@ -9,7 +9,7 @@ out_file = []
 for line in in_file:
     out_file.append(line)  						# copy each line, one by one
     if 'model.add(MaxPooling2D(pool_size = (2, 2)))\n' in line:  	# add a new entry, after a match
-        out_file.append('model.add(Conv2D(50, (5, 5) )) \n model.add(Activation("relu")) \n model.add(MaxPooling2D(pool_size = (2, 2),strides = (2, 2)))')
+        out_file.append('\nmodel.add(Conv2D(50, (5, 5) )) \nmodel.add(Activation("relu")) \nmodel.add(MaxPooling2D(pool_size = (2, 2),strides = (2, 2)))')
 
 
 
