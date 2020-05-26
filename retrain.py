@@ -1,6 +1,6 @@
 # Let's read our input file into a variable
 
-with open('cnncode.py', 'r') as f:
+with open('/home/hiren/mlopstask/cnncode.py', 'r') as f:
     in_file = f.readlines()  						# in_file is now a list of lines
 
 # Now we start building our output
@@ -16,5 +16,5 @@ for line in in_file:
 # Now let's write all those lines to a new output file.
 # You would re-write over the input file now, if you wanted!
 
-with open('new.py', 'w') as f:
+with open('/home/hiren/mlopstask/new.py', 'w') as f:
     f.writelines(out_file)
