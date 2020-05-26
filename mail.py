@@ -1,10 +1,10 @@
 import smtplib, ssl
 
-port = 465   #For SSL
+port = 465   					#For SSL
 smtp_server = "smtp.gmail.com"
-sender_email = "hkruprela@gmail.com"  # Enter your address
-password = 'hiruharshit' # Enter password
-receiver_email = "hirenruprela@gmail.com"  # Enter receiver address
+sender_email = "hkruprela@gmail.com"  		# Enter your address
+password = 'ihefomnnemhvlwwp' 			# Enter password
+receiver_email = "hirenruprela@gmail.com"  	# Enter receiver address
 
 message = """\
 Subject:  Model successfully trained
