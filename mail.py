@@ -6,15 +6,9 @@ sender_email = "hkruprela@gmail.com"  # Enter your address
 password = 'hiruharshit' # Enter password
 receiver_email = "hirenruprela@gmail.com"  # Enter receiver address
 
-if accuracy > 99:
-    message = """\
+message = """\
 Subject:  Model successfully trained
 Congratulations accuracy achieved."""
-    
-else:
-    message = """\
-Subject: Accuracy not met 
-Accuracy not met, Training Again!"""
 
 context = ssl.create_default_context()
 with smtplib.SMTP_SSL(smtp_server, port, context=context) as server:
