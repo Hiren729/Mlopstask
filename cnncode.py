@@ -70,7 +70,7 @@ model.add(MaxPooling2D(pool_size = (2, 2)))
 
 # Fully connected layers (w/ RELU)
 model.add(Flatten())
-model.add(Dense(10))
+model.add(Dense(100))
 model.add(Activation("relu"))
 
 # Softmax (for classification)
